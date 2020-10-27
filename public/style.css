@@ -1,0 +1,94 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    animation: fadeIn 0.4s;
+}
+
+h2 {
+    padding: 18px 0px;
+    text-align: center;
+    color: #2c3e50;
+}
+
+.post {
+    border: 1px solid #2c3e50;
+    background-color: #e4eedd;
+    padding: 18px 28px;
+    margin: 8px 0px;
+}
+
+.username {
+    color: #ff7675;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.timestamp {
+    color: #9b59b6;
+    font-size: 14px;
+}
+
+.link {
+    padding: 5px 5px;
+}
+
+.flex-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0 0 0.5rem 0.5rem;
+    margin: -0.5rem;
+}
+
+.image-col {
+    flex-grow: 1;
+    flex-basis: auto;
+    justify-content: flex-start;
+    max-width: 175px;
+    max-height: 175px;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.image-col:hover {
+    animation: resize 0.25s;
+    animation-fill-mode: forwards;
+}
+
+.image-col img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    padding-right: 20px;
+    margin: 5px 15px;
+}
+
+.text-col {
+    flex-grow: 1;
+    flex-basis: auto;
+    padding: 20px 0px;
+}
+
+.post-form {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes resize {
+    from {
+        max-width: auto;
+        max-height: auto;
+    }
+    to {
+        max-width: 700px;
+        max-height: none;
+    }
+}

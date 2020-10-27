@@ -1,0 +1,16 @@
+const path = require('path');
+
+module.exports = {
+    session: {
+        secret: 'secret',
+        resave: false,
+        saveUninitialized: true
+    },
+    rateLimit: {
+        windowMs: 15 * 60 * 1000,
+        max: 10
+    },
+    publicPath: path.resolve('public'),
+    bcryptSaltRounds: 12,
+    randomKeyByteLength: 64
+}
